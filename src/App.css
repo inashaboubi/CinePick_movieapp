@@ -1,0 +1,37 @@
+.App {
+  min-height: 100vh;
+}
+
+.app-content {
+  width: min(100% - 3rem, 1440px);
+  margin: 0 auto;
+  padding: 112px 0 64px;
+}
+
+.page-heading {
+  margin: 0 0 2rem;
+}
+
+.page-heading h1,
+.page-heading h2 {
+  color: var(--color-text);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.page-heading p {
+  margin-top: 0.75rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .app-content {
+    width: min(100% - 2rem, 1440px);
+    padding-top: 142px;
+    padding-bottom: 40px;
+  }
+}
